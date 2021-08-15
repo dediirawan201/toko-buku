@@ -10,6 +10,14 @@ function App() {
     {_id:1, judul:"laskar pelangi", pengarang:"andrea hinata", harga:400000, stok:10},
   {_id:2, judul:"Naruto", pengarang:"laskar", harga:900000, stok:11},
   ])
+  function storeBook(e){
+    console.log(e)
+    alert('data berhasil ditambah')
+  }
+  const hapusBuku = (bukuId) => {
+    const newProduct = books.filter(book => book._id !== bukuId)
+    setBooks(newProduct);
+  }
   return (
     <div>
       <BrowserRouter>
@@ -19,7 +27,7 @@ function App() {
             <Beranda />
           </Route>
           <Route path='/manajemen-buku'>
-            <ManajemenBuku bookList={books}/>
+            <ManajemenBuku bookList={books} store={storeBook} deleteBook={hapusBuku}/>
           </Route>
         </Switch>
       </BrowserRouter>
