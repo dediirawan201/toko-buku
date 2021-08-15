@@ -27,7 +27,7 @@ function App() {
             <Beranda />
           </Route>
           <Route path='/manajemen-buku'>
-            <ManajemenBuku bookList={books} store={storeBook} deleteBook={hapusBuku}/>
+            <ManajemenBuku />
           </Route>
         </Switch>
       </BrowserRouter>

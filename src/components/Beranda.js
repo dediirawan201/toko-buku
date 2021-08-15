@@ -24,11 +24,12 @@ function Beranda() {
               <th>Pengarang</th>
               <th>Harga</th>
               <th>Stok</th>
+
             </tr>
           </thead>
           <tbody>
             {books.map((book, index) => (
-              <tr key={index}>
+              <tr key={book.id}>
                 <td>{index + 1}</td>
                 <td>{book.judul}</td>
                 <td>{book.pengarang}</td>
