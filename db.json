@@ -1,0 +1,6 @@
+{
+    "books":[
+        {"_id":1, "judul":"laskar pelangi", "pengarang":"andrea hinata", "harga":400000, "stok":10},
+      {"_id":2, "judul":"Naruto", "pengarang":"laskar", "harga":900000, "stok":11}
+      ]
+}
